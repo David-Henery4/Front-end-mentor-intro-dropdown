@@ -1,11 +1,45 @@
-.nav-mob{
-    // width: 100vw;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 5%;
+.nav {
+  // width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.6rem;
+  &__links{
+    display: none;
+  }
 }
 
+// MEDIA QUERIES (Desktop)
+
+@media (min-width: 1000px) {
+  .burger-icon {
+    display: none;
+  }
+  .nav{
+    padding: 2%;
+    &__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    &__links{
+      display: block;
+      margin: 0 2rem .7rem;
+      position: relative;
+      a,
+      a:link,
+      a:visited{
+        text-decoration: none;
+        margin: 0 2rem;
+        color: $medium-grey;
+        font-size: 1.2rem;
+      }
+      a:hover{
+        color: $almost-black;
+      }
+    }
+  }
+}
 
 

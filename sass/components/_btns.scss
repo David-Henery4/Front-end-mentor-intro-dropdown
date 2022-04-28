@@ -1,5 +1,18 @@
 .btn{
     background-color: $almost-black;
-    padding: 5% 8%;
-    border-radius: 15px;
+    padding: 14px 20px;
+    border-radius: 12px;
+}
+
+.login-btn{
+    background-color: transparent;
+    border: none;
+    margin-right:3.5rem;
+}
+
+.register-btn{
+    background-color: transparent;
+    padding: .5rem 1.4rem;
+    border: 1px solid $almost-black;
+    border-radius: 10px;
 }

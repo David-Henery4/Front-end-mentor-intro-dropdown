@@ -18,23 +18,50 @@
   
   <section class="hero">
 
-    <nav class="nav-mob">
-      <div class="logo">
-        <img src="/images/logo.svg" alt="">
+    <nav class="nav">
+
+      <div class="nav__left">
+        <div class="logo">
+          <img src="/images/logo.svg" alt="">
+        </div>
+        <div class="nav__links">
+          <a href="#">Features</a>
+          <div class="arrow-feat">
+            <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
+          </div>
+          <a href="#">Company</a>
+          <div class="arrow-comp">
+            <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
+          </div>
+          <a href="#">Careers</a>
+          <a href="#">About</a>
+        </div>
       </div>
-      <div class="burger-icon">
-        <img src="/images/icon-menu.svg" alt="">
+
+      <div class="nav__right">
+        <div class="nav__btns">
+          <button class="login-btn">login</button>
+          <button class="register-btn">register</button>
+        </div>
+        <div class="burger-icon">
+          <img src="/images/icon-menu.svg" alt="">
+        </div>
       </div>
+
     </nav>
 
     <header class="header">
 
       <div class="header__image">
-        <img src="/images/image-hero-mobile.png" alt="hero-image">
+        <picture>
+        <source srcset="/images/image-hero-desktop.png" media="(min-width: 1000px)">
+        <source srcset="/images/image-hero-mobile.png">
+        <img src="/images/image-hero-mobile.png" alt="Flowers">
+        </picture>
       </div>
 
       <div class="header__content">
-        <h1 class="header__content--title">Make remote work</h1>
+        <h1 class="header__content--title"> <span>Make</span> remote work</h1>
         <p class="header__content--text">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
         <a href="#" class="btn header__content--btn">Learn more</a>
       </div>
