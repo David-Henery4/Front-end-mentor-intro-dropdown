@@ -75,7 +75,7 @@
 @media (min-width: 1000px){
   .header{
     display: grid;
-    width: 90%;
+    width: 85%;
     height:75%;
     // max-height: 515px;
     grid-template-areas: 
@@ -85,7 +85,7 @@
     "icons icons img img";
     gap: 2rem;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4,120px);
+    grid-template-rows: repeat(4,110px);
     @include resetMarginAndMax;
     &__image{
       @include resetMarginAndMax;
