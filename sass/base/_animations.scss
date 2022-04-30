@@ -1,0 +1,12 @@
+// Mob Animation Classes
+
+.nav-slide--active{
+    transition: .8s all ease;
+    transform:  translateX(0%);
+}
+
+.nav-mob-container--active{
+    visibility: visible;
+    opacity: 1;
+    transition: .7s;
+}

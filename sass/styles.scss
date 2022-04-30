@@ -1,12 +1,13 @@
 @import"./abstracts/variables";
 @import"./abstracts/functions";
 @import"./abstracts/mixins";
-@import "./base/animations";
 @import "./base/base";
 @import "./base/typography";
 @import "./base/utilities";
 @import "./components/btns";
 @import "./components/navbar-mob";
+@import "./components/navbar-desk";
+@import "./base/animations";
 @import "./layout/header";
 @import "./pages/home";
 @import "./vendors/icons";

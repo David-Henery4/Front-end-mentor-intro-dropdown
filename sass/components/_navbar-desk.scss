@@ -1,0 +1,35 @@
+// MEDIA QUERIES (Desktop)
+
+@media (min-width: 1000px) {
+  .burger-icon {
+    display: none;
+  }
+  .nav{
+    padding: 2%;
+    height: 15vh;
+    &__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    &__links{
+      display: block;
+      margin: 0 2rem .7rem;
+      position: relative;
+      a,
+      a:link,
+      a:visited{
+        text-decoration: none;
+        margin: 0 2rem;
+        color: $medium-grey;
+        font-size: 1.2rem;
+      }
+      a:hover{
+        color: $almost-black;
+      }
+    }
+    &__btns{
+        display: block;
+    }
+  }
+}
