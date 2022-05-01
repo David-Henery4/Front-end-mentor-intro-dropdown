@@ -17,6 +17,20 @@ navMobCloseIcon.addEventListener("click", function(e){
     navSlideContainer.classList.remove("nav-slide--active");
 })
 
-const mobNavAni = () => {
+// const mobNavAni = () => {
     
-}
+// }
+
+// Accordion Functionality
+
+const featuresArrow = document.querySelector(".arrow-feat-mob")
+const dropDownLinksMob = document.querySelector(".features-links-mob");
+featuresArrow.addEventListener("click", function(){
+    const panel = dropDownLinksMob
+    // console.log(panel)
+    if (panel.style.maxHeight){
+        panel.style.maxHeight = null
+    } else{
+        panel.style.maxHeight = panel.scrollHeight + "px"
+    }
+})
