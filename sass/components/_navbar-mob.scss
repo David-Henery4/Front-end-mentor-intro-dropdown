@@ -68,46 +68,82 @@
   } // Shared with nav desk // diff font-size (mixin)
 }
 
-.nav-mob-links > *{
-    margin: 1rem 2rem;
+.nav-mob-links > * {
+  margin: 1rem 2rem;
 }
 
+.features-toggle,
+.company-toggle {
+  position: relative;
+}
 
-.features-toggle{
-  position: relative;
-  text-align: left;
-}
-.company-toggle{
-  text-align: left;
-  position: relative;
-}
 .arrow-feat-mob,
 .arrow-comp-mob {
   position: absolute;
-  top: .2rem;
+  top: 0.2rem;
   left: 10rem;
 }
-
 
 // INSIDE NAV LINKS/DROPDOWNS (MOB)
 
 .features-links-mob {
   // display: none;
+  position: relative;
+  top: .5rem;
   display: flex;
   flex-direction: column;
   // padding: 1.5rem;
+  // overflow-y: hidden;
+  width: 100%;
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.2s ease-out;
-  margin: 0;
+  margin: 0 4rem;
   a,
   a:link,
   a:visited {
     // margin-bottom: 0.5rem;
-    margin: 0;
+    position: relative;
+    left: 3rem;
+    top: 1rem;
+    margin-bottom: 2rem;
   }
 }
 
+// .features-links-mob > *{
+
+// }
+
+.icons {
+  position: absolute;
+}
+.todo-icon {
+  top: .8rem;
+  left: 0rem;
+}
+.calendar-icon {
+  top: 4.3rem;
+  left: 0;
+}
+.reminders-icon {
+  top: 7.7rem;
+  left: 0;
+}
+.planning-icon {
+  top: 11.2rem;
+  left: 0;
+}
+
 .company-links-mob {
-  display: none;
+  // display: none;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-height: 0;
+  margin: 0 4.5rem;
+  a,
+  a:link,
+  a:visited{
+    margin: 1.2rem 0;
+  }
 }

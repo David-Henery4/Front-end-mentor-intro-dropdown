@@ -21,16 +21,28 @@ navMobCloseIcon.addEventListener("click", function(e){
     
 // }
 
-// Accordion Functionality
 
+// Accordion Functionality (Features mob)
 const featuresArrow = document.querySelector(".arrow-feat-mob")
 const dropDownLinksMob = document.querySelector(".features-links-mob");
 featuresArrow.addEventListener("click", function(){
-    const panel = dropDownLinksMob
-    // console.log(panel)
-    if (panel.style.maxHeight){
-        panel.style.maxHeight = null
-    } else{
-        panel.style.maxHeight = panel.scrollHeight + "px"
-    }
+  const panel = dropDownLinksMob;
+  panel.classList.toggle("nav-sub-links-bott");
+  if (panel.style.maxHeight) {
+    panel.style.maxHeight = null;
+  } else {
+    panel.style.maxHeight = panel.scrollHeight + "px";
+  }
+})
+
+// Accordion Functionality (Company Mob)
+
+const companyArrow = document.querySelector(".arrow-comp-mob");
+const companyDropDownMob = document.querySelector(".company-links-mob");
+companyArrow.addEventListener("click", () => {
+  if (companyDropDownMob.style.maxHeight){
+    companyDropDownMob.style.maxHeight = null
+  } else {
+    companyDropDownMob.style.maxHeight = companyDropDownMob.scrollHeight + "px"
+  }
 })
