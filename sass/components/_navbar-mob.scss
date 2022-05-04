@@ -81,7 +81,13 @@
 .arrow-comp-mob {
   position: absolute;
   top: 0.2rem;
-  left: 10rem;
+  left: 8rem;
+  transition: .2s ease-out;
+}
+
+.arrow-active{
+  transform: rotate(180deg);
+  transition: .2s ease-out;
 }
 
 // INSIDE NAV LINKS/DROPDOWNS (MOB)
@@ -89,7 +95,7 @@
 .features-links-mob {
   // display: none;
   position: relative;
-  top: .5rem;
+  top: 0.5rem;
   display: flex;
   flex-direction: column;
   // padding: 1.5rem;
@@ -118,7 +124,7 @@
   position: absolute;
 }
 .todo-icon {
-  top: .8rem;
+  top: 0.8rem;
   left: 0rem;
 }
 .calendar-icon {
@@ -141,9 +147,10 @@
   overflow: hidden;
   max-height: 0;
   margin: 0 4.5rem;
+  transition: max-height 0.2s ease-out;
   a,
   a:link,
-  a:visited{
+  a:visited {
     margin: 1.2rem 0;
   }
 }

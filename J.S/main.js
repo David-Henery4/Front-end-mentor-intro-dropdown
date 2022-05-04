@@ -26,6 +26,7 @@ navMobCloseIcon.addEventListener("click", function(e){
 const featuresArrow = document.querySelector(".arrow-feat-mob")
 const dropDownLinksMob = document.querySelector(".features-links-mob");
 featuresArrow.addEventListener("click", function(){
+  featuresArrow.classList.toggle("arrow-active");
   const panel = dropDownLinksMob;
   panel.classList.toggle("nav-sub-links-bott");
   if (panel.style.maxHeight) {
@@ -40,6 +41,7 @@ featuresArrow.addEventListener("click", function(){
 const companyArrow = document.querySelector(".arrow-comp-mob");
 const companyDropDownMob = document.querySelector(".company-links-mob");
 companyArrow.addEventListener("click", () => {
+  companyArrow.classList.toggle("arrow-active");
   if (companyDropDownMob.style.maxHeight){
     companyDropDownMob.style.maxHeight = null
   } else {
