@@ -37,7 +37,6 @@ featuresArrow.addEventListener("click", function(){
 })
 
 // Accordion Functionality (Company Mob)
-
 const companyArrow = document.querySelector(".arrow-comp-mob");
 const companyDropDownMob = document.querySelector(".company-links-mob");
 companyArrow.addEventListener("click", () => {
@@ -48,3 +47,16 @@ companyArrow.addEventListener("click", () => {
     companyDropDownMob.style.maxHeight = companyDropDownMob.scrollHeight + "px"
   }
 })
+
+// Desktop Navigation
+
+const desktopArrowFeat = document.querySelector(".arrow-feat")
+const desktopArrowComp = document.querySelector(".arrow-comp");
+
+desktopArrowFeat.addEventListener("click", () => {
+  desktopArrowFeat.classList.toggle("arrow-active");
+});
+
+desktopArrowComp.addEventListener("click", () => {
+  desktopArrowComp.classList.toggle("arrow-active");
+});
