@@ -44,12 +44,17 @@
       // font-size: $paragraph-font-size;
     }
     &--btn {
-      margin-bottom: -1rem;
       text-decoration: none;
       font-size: 1.5rem;
       &:link,
       &:visited {
         color: $almost-white;
+      }
+      &:hover{
+        background-color: transparent;
+        border: 1px solid $almost-black;
+        color: $almost-black;
+        font-weight: 700;
       }
     }
   }

@@ -9,17 +9,23 @@
     border: none;
     margin-right:3.5rem;
     color: $medium-grey;
+    font-weight: 700;
 }
 
 .register-btn{
     background-color: transparent;
-    padding: .5rem 1.4rem;
-    border: 1px solid $almost-black;
+    padding: .8rem 1.6rem;
+    border: 2px solid $medium-grey;
     border-radius: 10px;
     color: $medium-grey;
+    font-weight: 700;
+    &:hover{
+        border: 2px solid $medium-grey;
+    }
 }
 
 .login-btn:hover,
 .register-btn:hover{
     color: $almost-black;
+    cursor: pointer;
 }

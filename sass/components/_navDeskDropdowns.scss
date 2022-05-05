@@ -1,0 +1,23 @@
+.nav__dropdown--feat{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 3rem;
+    // background-color: #fff;
+}
+.nav__dropdown--comp{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 3rem;
+    left: 12rem;
+}
+
+.link-icon{
+    position: relative;
+    svg{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
