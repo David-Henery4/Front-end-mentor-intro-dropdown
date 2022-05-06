@@ -52,11 +52,16 @@ companyArrow.addEventListener("click", () => {
 
 const desktopArrowFeat = document.querySelector(".arrow-feat")
 const desktopArrowComp = document.querySelector(".arrow-comp");
+const featDropDesk = document.querySelector(".nav__dropdown--feat");
+const compDropDesk = document.querySelector(".nav__dropdown--comp");
 
 desktopArrowFeat.addEventListener("click", () => {
   desktopArrowFeat.classList.toggle("arrow-active");
+  featDropDesk.classList.toggle("nav-dropdown-active");
 });
 
 desktopArrowComp.addEventListener("click", () => {
   desktopArrowComp.classList.toggle("arrow-active");
+  compDropDesk.classList.toggle("nav-dropdown-active");
 });
+
