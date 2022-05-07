@@ -1,13 +1,19 @@
-.arrow-feat{
-    position: absolute;
-    left: 22%;
-    bottom: .1rem;
-    transition: .2s ease-out;
+.arrow-feat {
+  position: absolute;
+  left: 22%;
+  bottom: 0.1rem;
+  transition: 0.2s ease-out;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
-.arrow-comp{
-    position: absolute;
-    left: 49%;
-    bottom: .1rem;
-    transition: .2s ease-out;
+.arrow-comp {
+  position: absolute;
+  left: 49%;
+  bottom: 0.1rem;
+  transition: 0.2s ease-out;
+  &:hover {
+    cursor: pointer;
+  }
 }
