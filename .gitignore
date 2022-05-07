@@ -19,3 +19,5 @@ node_modules
 dist
 notes.notes
 .parcel-cache
+README.MD
+README-template.md
